@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    font-family: Arial;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 100vh;
+}
+
+a {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 2vh;
+    padding: 2vh 5vh;
+    background: #51B5A9;
+    color: #FADE8B;
+    border-radius: 2vh;
+    text-decoration: none;
+}
+
+/**************************************************************************
+    Design Nr.1
+    Farben: #E3516E, #F7F3D7, #51B5A9, #FADE8B
+*/
+#design1 {
+    background:  #E3516E;
+}
+
+#design1 > div {
+    display: inline-block;
+    position: absolute;
+    min-width: 30vmin;
+    min-height: 30vmin;
+}
+.pie-top-left {
+    right: 50%;
+    bottom: 50%;
+    border-top-left-radius: 30vmin;
+    background:  #51B5A9;
+}
+.pie-top-right {
+    left: 50%;
+    bottom: 50%;
+    border-top-right-radius: 30vmin;
+    background:  #FADE8B;
+}
+.pie-bottom-left {
+    right: 50%;
+    top: 50%;
+    border-bottom-left-radius: 30vmin;
+    background:  #F7F3D7;
+}
+
+
+/**************************************************************************
+    Design Nr.2
+    Farben: #191210, #ECA03D, #84271C
+*/
+#design2 {
+    background:  #191210;
+}
+#design2 a {
+    background:  #ECA03D;
+    color: #191210;
+}
+.circle-1 {
+    position: relative;
+    top:    10vh;
+    bottom: 0;
+    left:   0;
+    right:  0;
+    margin: auto;
+    width:  60vmin;
+    height: 60vmin;
+    border-radius:  30vmin;
+    background-color:  #ECA03D;
+}
+.circle-2 {
+    position: absolute;
+    top: 10vmin;
+    left: 10vmin;
+    width:  40vmin;
+    height: 40vmin;
+    border-radius:  20vmin;
+    background-color:  #191210;
+}
+.circle-3 {
+    position: absolute;
+    top: 10vmin;
+    left: 10vmin;
+    width:  20vmin;
+    height: 20vmin;
+    border-radius:  10vmin;
+    background-color:  #84271C;
+}
+
+.half-circle-left {
+    position: absolute;
+    bottom:   5vmin;
+    left:   -40vmin;
+    width:   50vmin;
+    height:  25vmin;
+    border-bottom-left-radius:  50vmin;
+    border-bottom-right-radius: 50vmin;
+    background-color:  #ECA03D;
+}
+.circle-left {
+    position: absolute;
+    top:    -15vmin;
+    left:    10vmin;
+    width:   30vmin;
+    height:  30vmin;
+    border-radius:  15vmin;
+    background-color:  #191210;
+}
+.half-circle-right {
+    position: absolute;
+    top:      5vmin;
+    right:  -40vmin;
+    width:   50vmin;
+    height:  25vmin;
+    border-top-left-radius:  25vmin;
+    border-top-right-radius: 25vmin;
+    background-color:  #ECA03D;
+}
+.circle-right {
+    position: absolute;
+    bottom: -15vmin;
+    right:   10vmin;
+    width:   30vmin;
+    height:  30vmin;
+    border-radius:  15vmin;
+    background-color:  #191210;
+}

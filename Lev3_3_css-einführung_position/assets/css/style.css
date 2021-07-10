@@ -1,0 +1,169 @@
+/* ========================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+    Farben: #7B8CE4, #EBEAEC, #FFECCC, #3F414E
+    Font: Arial 
+*/
+
+
+/* ========================================================================= */
+
+body {
+    background: #7B8CE4;
+    height: 100vh;
+    font-family: Arial;
+    color: #EBEAEC;
+}
+main {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #EBEAEC;
+}
+
+
+/* ========================================================================= */
+header div p {
+    font-size: 2.0vh;
+    font-stretch: expanded;
+    position: absolute;
+    top: 1.2vh;
+}
+header div p:first-of-type {
+    left: 3vh;
+}
+header div img {
+    width: 3vh;
+    position: absolute;
+    top: 1vh;
+    left: 9vh;
+}
+header div p:last-of-type {
+    left: 13vh;
+}
+header ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 2vh 0;
+    list-style: none;
+    display: inline-block;
+}
+header ul li {
+    display: inline;
+    padding: 2vh 4vh 0 0;
+}
+
+
+/* ========================================================================= */
+.textblock {
+    position: relative; 
+    left: 15%;
+    width: 50vh;
+}
+.textblock h1 {
+    position: absolute;
+    top: 30vh;
+    margin-left: 5%;
+    width: 70%;
+    font-size: 5vh;
+    color: #FFECCC;
+}
+.textblock p {
+    position: absolute;
+    top: 45vh;
+    margin-left: 5%;
+    width: 70%;
+    font-size: 2vh;
+    line-height: 1.5;
+}
+.textblock a {
+    position: absolute;
+    top: 60vh;
+    display: block;
+    width: 80%;
+    background: #EBEAEC;
+    color: #3F414E;
+    padding: 2vh 0;
+    font-size: 1.5vh;
+    font-weight:bolder;
+    border-radius: 5vh;
+}
+
+
+/* ========================================================================= */
+.graphics {
+    position: relative; 
+}
+.graphics .circle {
+    position: absolute;
+    width: 40%;
+    top: 15vh;
+}
+.graphics .woman {
+    position: absolute;
+    width: 27%;
+    right: 30vh;
+    top: 40vh;
+    /*  start animation */
+    animation-name: woman;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.graphics .cloud1 {
+    position: absolute;
+    width: 10%;
+    right: 20vh;
+    top: 20vh;
+    /*  start animation */
+    animation-name: cloud1;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+.graphics .cloud2 {
+    position: absolute;
+    width: 5%;
+    right: 80vh;
+    top: 20vh;
+    /*  start animation */
+    animation-name: cloud2;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+
+/* ========================================================================= 
+ * animations 
+ */
+@keyframes woman {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+@keyframes cloud1 {
+    from    {transform: translate(   0vw,   0%); }
+    to      {transform: translate( -35vw,   0%); }
+}
+@keyframes cloud2 {
+    from    {transform: translate(   0vw,   0%); }
+    to      {transform: translate( +40vw,   0%); }
+}
+
+/* @keyframes woman {
+    0.0%    {transform: translate(   0%,   0%); }
+    12.5%   {transform: translate( -20%, -10%); } 
+    25.0%   {transform: translate( -30%,   0%); }
+    37.5%   {transform: translate( -20%, +10%); } 
+    50.0%   {transform: translate(  0px,   0%); } 
+    62.5%   {transform: translate( +20%, -10%); } 
+    75.0%   {transform: translate( +30%,   0%); }
+    87.5%   {transform: translate( +20%, +10%); } 
+    100%    {transform: translate(   0%,   0%); }
+} */
