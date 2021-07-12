@@ -68,7 +68,7 @@ a {
     background:  #ECA03D;
     color: #191210;
 }
-.circle-1 {
+#design2 .circle-1 {
     position: relative;
     top:    10vh;
     bottom: 0;
@@ -80,7 +80,7 @@ a {
     border-radius:  30vmin;
     background-color:  #ECA03D;
 }
-.circle-2 {
+#design2 .circle-2 {
     position: absolute;
     top: 10vmin;
     left: 10vmin;
@@ -89,7 +89,7 @@ a {
     border-radius:  20vmin;
     background-color:  #191210;
 }
-.circle-3 {
+#design2 .circle-3 {
     position: absolute;
     top: 10vmin;
     left: 10vmin;
@@ -99,7 +99,7 @@ a {
     background-color:  #84271C;
 }
 
-.half-circle-left {
+#design2 .half-circle-left {
     position: absolute;
     bottom:   5vmin;
     left:   -40vmin;
@@ -109,7 +109,7 @@ a {
     border-bottom-right-radius: 50vmin;
     background-color:  #ECA03D;
 }
-.circle-left {
+#design2 .circle-left {
     position: absolute;
     top:    -15vmin;
     left:    10vmin;
@@ -118,7 +118,7 @@ a {
     border-radius:  15vmin;
     background-color:  #191210;
 }
-.half-circle-right {
+#design2 .half-circle-right {
     position: absolute;
     top:      5vmin;
     right:  -40vmin;
@@ -128,7 +128,7 @@ a {
     border-top-right-radius: 25vmin;
     background-color:  #ECA03D;
 }
-.circle-right {
+#design2 .circle-right {
     position: absolute;
     bottom: -15vmin;
     right:   10vmin;
@@ -137,3 +137,4 @@ a {
     border-radius:  15vmin;
     background-color:  #191210;
 }
+
